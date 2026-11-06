@@ -17,6 +17,8 @@ metadata so agent directories and skill indexers can discover it more easily.
   and broadened the `description` trigger keywords.
 - `README.md` / `README.zh-CN.md`: added status badges and a "When to use"
   section listing the trigger phrases.
+- `README.md`: added a Mermaid pipeline diagram and a "Known limitations"
+  section.
 
 ## [1.0.0] - 2026-11-06
 

@@ -106,18 +106,18 @@ Full walkthrough, including dialogue lookups and subtitle compositing:
 
 ## How it works
 
-```
-request
-  |-- fact-check the line / scene ................ references/fact-check.md
-  |-- probe source reachability ................. still.py probe
-  |-- choose source by request type ............. references/sources.md
-  |-- extract direct image URLs from pages
-  |-- concurrent download, validate in memory, never write junk
-  |-- numbered contact sheet .................... still.py sheet
-  |-- VISION PICK (cannot be skipped)
-  |-- high-res original / crop / subtitle ....... still.py full|crop|subtitle
-  |-- visual re-check + provenance manifest
-  `-- deliver ................................... still.py deliver
+```mermaid
+flowchart TD
+    A["request: scene / mood / line"] --> B["fact-check the line / scene"]
+    B --> C["probe source reachability"]
+    C --> D["choose source by request type"]
+    D --> E["extract direct image URLs"]
+    E --> F["concurrent download, validate in memory"]
+    F --> G["numbered contact sheet"]
+    G --> H["VISION PICK — cannot be skipped"]
+    H --> I["high-res original / crop / subtitle"]
+    I --> J["visual re-check + provenance manifest"]
+    J --> K["deliver"]
 ```
 
 The vision step is the whole point. A text-only agent guessing from filenames
@@ -183,6 +183,21 @@ docs/iterations/          the three self-review rounds and their findings
 Full parameters, required `Referer` headers, and the known-dead list:
 [references/sources.md](references/sources.md) and
 [references/pitfalls.md](references/pitfalls.md).
+
+## Known limitations
+
+First public release — a few things are honestly still open:
+
+- **CI has not run on GitHub yet.** The workflow is written and the same
+  commands pass locally, but it has not executed against GitHub Actions.
+- **`frames` live path is not exhaustively tested.** The offline test covers the
+  pipeline end-to-end on synthetic images; the live frame-by-frame path has been
+  exercised once in the field, not across every Python 3.9/3.11/3.12.
+- **Sources drift.** FilmGrab and some image CDNs returned 502/403 in the
+  2026-11-06 field run; always `probe` first and expect to switch sources.
+- **No release automation yet.** Tagging and releases are manual for now.
+
+None of these block normal use; they are recorded rather than hidden.
 
 ## Legal
 
