@@ -1,0 +1,19 @@
+{
+  "name": "minimal",
+  "description": "Default general-purpose pipeline. No assumptions about how images are selected; compliance rules stay on.",
+  "version": 1,
+  "rules": {
+    "human_picks": false,
+    "auto_finalize": true,
+    "preview_batch_size": 12,
+    "keep_every_candidate": false,
+    "deliver_layout": "single-folder",
+    "fact_check_required": false,
+    "source_manifest": true,
+    "subtitle_annotation_required": true,
+    "record_dead_ends": true,
+    "cover_crop_preview": null,
+    "min_width": 1000,
+    "avoid_duplicate_films": false
+  }
+}

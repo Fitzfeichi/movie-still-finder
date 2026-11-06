@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Runtime output: candidates, work directories and deliveries are generated,
+# never committed. This repository intentionally contains NO film stills.
+work/
+out/
+delivery/
+deliverables/
+candidates/
+contact_*.jpg
+manifest.json
+tests/_fixtures/
+
+# Secrets and local environment (defence in depth: no secrets are needed)
+.env
+.env.*
+*.key
+*_token*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Never commit downloaded imagery by accident. If you need to ship a test
+# image, generate one with tests/make_fixtures.py instead.
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif

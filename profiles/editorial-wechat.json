@@ -1,0 +1,23 @@
+{
+  "name": "editorial-wechat",
+  "description": "Human editor workflow for Chinese long-form articles: numbered previews, human selection, zero candidate deletion, mandatory fact-check and source/subtitle annotation, 2.35:1 cover comparison.",
+  "version": 1,
+  "rules": {
+    "human_picks": true,
+    "auto_finalize": false,
+    "preview_batch_size": 12,
+    "keep_every_candidate": true,
+    "deliver_layout": "dual-folder",
+    "fact_check_required": true,
+    "source_manifest": true,
+    "subtitle_annotation_required": true,
+    "record_dead_ends": true,
+    "cover_crop_preview": {
+      "ratio": 2.35,
+      "anchor": 0.42,
+      "output_width": 900
+    },
+    "min_width": 1000,
+    "avoid_duplicate_films": true
+  }
+}

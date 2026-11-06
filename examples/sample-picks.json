@@ -1,0 +1,21 @@
+{
+  "request": "Two people sitting together after a misunderstanding, each looking a different way",
+  "_comment": "Illustrative only. Edit ids and film names to match your own contact sheet and manifest.",
+  "profile_hint": "editorial-wechat",
+  "picks": [
+    {
+      "id": "p1_02",
+      "as": "01_two_people_apart.jpg",
+      "film": "Example Film (2009)",
+      "note": "Wide frame, plenty of empty space for a title overlay.",
+      "processed": "none"
+    },
+    {
+      "id": "p1_07",
+      "as": "02_quiet_after_the_argument.jpg",
+      "film": "Example Film (2009)",
+      "note": "Backup with stronger facial detail.",
+      "processed": "cropped 100px from bottom to remove burned-in subtitle"
+    }
+  ]
+}
