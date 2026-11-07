@@ -190,8 +190,6 @@ Full parameters, required `Referer` headers, and the known-dead list:
 
 First public release — a few things are honestly still open:
 
-- **CI has not run on GitHub yet.** The workflow is written and the same
-  commands pass locally, but it has not executed against GitHub Actions.
 - **`frames` live path is not exhaustively tested.** The offline test covers the
   pipeline end-to-end on synthetic images; the live frame-by-frame path has been
   exercised once in the field, not across every Python 3.9/3.11/3.12.
