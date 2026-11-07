@@ -16,6 +16,7 @@ metadata:
   displayName: "Movie Still Finder"
   scope: agent-agnostic
   category: media
+  author: Fitzfeichi
   tags:
     - movie-stills
     - film-screenshots

@@ -1,5 +1,7 @@
 # movie-still-finder
 
+![CI](https://github.com/Fitzfeichi/movie-still-finder/actions/workflows/ci.yml/badge.svg)
+![Stars](https://img.shields.io/github/stars/Fitzfeichi/movie-still-finder)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Version](https://img.shields.io/badge/Version-1.1.0-blue)
